@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo SwitchHTML</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var input,luas,keliling,panjang,lebar;
+        input = prompt("pilih keliling atau luas");
+        panjang = prompt("masukan panjang");
+        lebar = prompt("masukan lebar");
+        luas = panjang * lebar;
+        keliling = (2*panjang) + (2*lebar);
+            switch(input){
+            case "luas" : document.write("hasil luas"+luas);
+             break;
+            case "keliling" : document.write("hasil "+keliling);
+            } 
+        
+            </script>
+    </body>
+</html>

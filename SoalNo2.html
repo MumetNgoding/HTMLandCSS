@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Table Javascript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var nama1,nama2,nama3,harga1,harga2,harga3,jumlah1,jumlah2,jumlah3,subtotal1,subtotal2,subtotal3,total;
+
+            nama1 = prompt("nama barang1");
+            harga1 = prompt("harga barang1");
+            jumlah1 = prompt("jumlah barang1");
+
+            nama2 = prompt("nama barang2");
+            harga2 = prompt("harga barang2");
+            jumlah2 = prompt("jumlah barang2");
+
+            nama3 = prompt("nama barang3");
+            harga3 = prompt("harga barang3");
+            jumlah3 = prompt("jumlah barang3");
+            
+
+            subtotal1 = harga1*jumlah1;
+            subtotal2 = harga2*jumlah2;
+            subtotal3 = harga3*jumlah3;
+            total = subtotal1+subtotal2+subtotal3;
+
+            document.write("<table border='1'>");
+            document.write("<tr>"); 
+            document.write("<td>Nama</td><td>Harga</td><td>Jumlah</td><td>SubTotal</td>");
+            document.write("</tr>"); 
+            document.write("<tr>");
+            document.write("<td>"+nama1+"</td><td>"+harga1+"</td><td>"+jumlah1+"</td><td>"+subtotal1+"</td>");
+            document.write("</tr>");
+
+
+            document.write("<tr>");
+            document.write("<td>"+nama2+"</td><td>"+harga2+"</td><td>"+jumlah2+"</td><td>"+subtotal2+"</td>");
+            document.write("</tr>");
+
+
+            document.write("<tr>");
+            document.write("<td>"+nama3+"</td><td>"+harga3+"</td><td>"+jumlah3+"</td><td>"+subtotal3+"</td>");
+            document.write("</tr>");
+            
+            document.write("<tr>");
+            document.write("<td colspan='3' style='text-align:center;'>total</td><td>"+total+"</td>");
+            document.write("</tr>");
+            document.write("</table>");
+
+        </script>
+    </body>
+</html>
