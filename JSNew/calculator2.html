@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+            
+            <button id="btn0" value="0" onclick="document.getElementById('txtCalc').value += this.value">0</button>
+            <button id="btn1" value="1" onclick="document.getElementById('txtCalc').value += this.value">1</button>
+            <button id="btn2" value="2" onclick="document.getElementById('txtCalc').value += this.value">2</button>
+            <button id="btn3" value="3" onclick="document.getElementById('txtCalc').value += this.value">3</button>
+            <button id="btn4" value="4" onclick="document.getElementById('txtCalc').value += this.value">4</button>
+            <button id="btn5" value="5" onclick="document.getElementById('txtCalc').value += this.value">5</button>
+            <button id="btn6" value="6" onclick="document.getElementById('txtCalc').value += this.value">6</button>
+            <button id="btn7" value="7" onclick="document.getElementById('txtCalc').value += this.value">7</button>
+            <button id="btn8" value="8" onclick="document.getElementById('txtCalc').value += this.value">8</button>
+            <button id="btn9" value="9" onclick="document.getElementById('txtCalc').value += this.value">9</button>
+            
+            <br><br>
+            <button id="btnTambah" value="+" onclick="document.getElementById('txtCalc').value += this.value + ''">+</button>
+            <button id="btnKurang" value="-" onclick="document.getElementById('txtCalc').value += this.value + ''">-</button>
+            <button id="btnKali" value="*" onclick="document.getElementById('txtCalc').value += this.value + ''">*</button>
+            <button id="btnBagi" value="/" onclick="document.getElementById('txtCalc').value += this.value + ''">/</button>
+    
+        <br><br>
+            <input type="text" id="txtCalc" placeholder="Nilai button">
+            <button id="btnHasil">=</button>
+
+        
+        <br><br> 
+            <input type="text" id="txtCalc" placeholder="Hasil Kalkulasi">
+            <button id="btnBagi" value="c" onclick="document.getElementById('txtCalc').value = null">c</button>
+
+
+            <script>
+
+
+            </script>
+    
+    </body>
+</html>

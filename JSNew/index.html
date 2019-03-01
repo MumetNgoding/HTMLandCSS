@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS New</title>
+    </head>
+    <body>
+            <h1>Welcome</h1>            
+        <script>
+            var name = "JS New";
+            var age = 27;
+            var isRegistered = true;
+            var keterampilan = new Array("JS", "New", "Demo");
+            var skills = ["Dasar", "Pemrograman", "JavaScript"];
+            var obj = document.querySelector("h1");
+
+            document.write("Hello, " + name[0] + "<hr>"); //with index
+            document.write("Your Skill is " + skills[2] + "<br>"); //with index
+            //document.write("Hello : "+ name + "<hr>");
+            //document.write("This is your skills : <br>");
+            //document.write(keterampilan);
+            //document.write("<br>This is your books: <br>");
+            //document.write(skills);
+            //document.write("Hello, WOrld<br>");
+            //document.write("How are you Today?");
+            //document.write("<h1>Hello, world!</h1>");
+
+            alert("Selamat datang di website saya!");
+            prompt("Apakah anda ingin melanjutkan?");
+
+
+            // && simbol AND
+            // || simbol OR
+
+            var isRegistered = true;
+            if(isRegistered === true && age >= 25){
+                document.write("Thank you for your registration " + name);
+            } else{
+                document.write("Sorry, You mus register first!");
+            }
+
+            if(isRegistered === true  && age === 27){
+                document.write(" you allowed this room");
+            }else{
+                document.write(" you are note allowed this room")
+            }
+
+            document.write("<hr>");
+
+
+        </script>
+
+        <script>
+            var x, y;
+            
+            x = prompt("Silahkan masukan angka kesatu");
+            y = prompt("Silahkan masukan angka kedua");
+            z =parseInt(x) + parseInt(y);
+
+            document.write("Hasilnya adalah " + z);
+            </script>
+
+        <script>
+            //var skills = ["coding", "design", "DevOps", "BusinesDevelopment"]
+
+            //document.write("<ul>");
+            //for (var i = 0; i <skills.length; i++){
+            //    document.write(skills[i] + "<br>");
+            //}
+            //document.write("</ul>");
+//==========================================================================
+
+            //for (var i = 0; i < 100; i++){
+            //    document.write("ini adalah bilangan ke " +i+ "<br>")
+            //}
+//-----------------------------------------------------------------------------
+
+                //Panggil Popup Konfirmasi
+            //var x = confirm("Yes or No");
+
+                //selama konfirmasi di cancel maka akan looping konfirmasi terus
+                //hingga tertekan tombol yes/ok
+
+            //while (x === false){
+            //    x = confirm("Yes or No");
+
+            //}
+            //document.write("Anda akhirnya memilih Yes");
+//------------------------------------------------------------------------------
+
+        </script>
+    </body>
+
+</html>
