@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script>
+    //---------------------------------------------------------
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $("#div1").fadeIn();
+//         $("#div2").fadeIn(slow);
+//         $("#div3").fadeIn(3000);
+// });
+// });
+//---------------------------------------------------------------
+// $(document).ready(function(){
+//     $("#flip").click(function(){
+//         $("#panel").slideDown("slow");
+//     });
+// });
+//========================================================
+//start animation
+$(document).ready(function(){
+    $(".start-btn").click(function(){
+        $("img").animate({left: "+=150px"}, 3000);
+    });
+});
+
+//stop animation
+$(document).ready(function(){
+$(".stop-btn").click(function(){
+    $("img").stop();
+    });
+});
+//back animation
+$(document).ready(function(){
+$(".back-btn").click(function(){
+        $("img").animate({left: "-=150px"}, 2000);
+    });
+});
+//reset to default
+$(document).ready(function(){
+$(".reset-btn").click(function(){
+        $("img").animate({left: "0"}, "fast");
+    });
+});
+//=================================================
+</script>
+
+
+
+<style type="text/css">
+    img{ 
+        position: relative; /* Required to move element*/
+    }
+</style>
+<!-- <style>
+#panel, #flip{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel{
+    padding: 50px;
+    display: none;
+}
+</style> -->
+
+</head>
+<body>
+    
+<!-- ================================================================== -->
+    <!-- <p>Demonstrate fadeIn() with different parameters. </p>
+    <button>Click to fade in boxes</button><br><br>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div> -->
+    <!-- ================================================================== -->
+    <button>Start Animation</button>
+    <button type="button" class="start-btn">Start</button>
+    <button type="button" class="stop-btn">Stop</button>
+    <button type="button" class="back-btn">Back</button>
+    <button type="button" class="reset-btn">Reset</button>
+
+    <!-- <p>by default, all HTML elements have a static position, and cannot be moved. To manipulation</p> -->
+        
+    <img src="../img/logo.jpg">
+</body>
+</html>
